@@ -1,0 +1,658 @@
+@import "./reset.css";
+
+/* .{
+    background-image: url("bckg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+} */
+
+.ulan{
+    background-image: url("bckgnd.jpg");
+    background-position: center center;
+    height: 100vh;
+}
+
+.nav{
+    padding: 20px 0;
+    border-bottom: 1px solid #252525;
+    color:#fff;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    color: black;
+}
+
+.nav-row{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.appslist{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.appslist__item img{
+    background-color:#ffffff;
+    border-radius: 35%;
+    transition: 0.5s;
+    justify-content:space-between ;
+}
+.appslist__item img:hover{
+    background-color:rgb(227, 242, 25);
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-weight: 500;
+    font-family: cursive;
+}
+.nav-list__item{
+    transition: 0.5s;
+}
+.nav-list__item:hover{
+    transform: scale(1.2);
+    a{
+        color: rgb(227, 242, 25);
+    }
+}
+
+.nav-list__link{
+    color: #fff;
+}
+
+.header{
+    color: #fff;
+    padding: 40px 0;
+    min-height: 650px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.header__wrapper{
+    padding: 0 15px;
+    max-width: 660px;
+}
+
+.header__title{
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.baki{
+    padding: 0 15px;
+
+}
+
+.aboutme{
+    height: 150vh;
+    padding: 40px 0;
+}
+
+.skills{
+    height: 70vh;
+    background-image: url("bckgnd.jpg");
+    background-position: center center;
+}
+
+.contacts{
+    height: 100vh;
+    padding: 70px 0;
+}
+
+
+@media screen and (min-width: 700px) {
+    .header__title {
+        font-size: 40px;
+    }
+    .baki{
+        width: 330px;
+    }
+    .nav-list{
+        font-size: 20px;
+    }
+    .abouttext{
+        font-size: 60px;
+    }
+    .skill{
+        font-size: 60px;
+    }
+    .text{
+        .it{
+            font-size: 35px;
+        }
+        .prev{
+            font-size: 20px;
+        }
+        .text-about{
+            font-size: 18px;
+        }
+        .about-list{
+            font-size: 20px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 699px) {
+    .header__title {
+        font-size: 30px;
+    }
+    .baki{
+        width: 280px;
+    }
+    .nav-list{
+        font-size: 18px;
+    }
+    .abouttext{
+        font-size: 45px;
+    }
+    .skill{
+        font-size: 45px;
+    }
+    .text{
+        .it{
+            font-size: 33px;
+        }
+        .prev{
+            font-size: 18px;
+        }
+        .text-about{
+            font-size: 16px;
+        }
+        .about-list{
+            font-size: 18px;
+        }
+    }
+    .aic{
+        flex-direction: column;
+    }
+    .aboutme{
+        height: 250vh;
+    }
+    .skills{
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+    .header__title{
+        font-size: 20px;
+    }
+    .baki{
+        width: 230px;
+    }
+    .nav-list{
+        font-size: 15px;
+    }
+    .abouttext{
+        font-size: 35px;
+    }
+    .skill{
+        font-size: 35px;
+    }
+    .text{
+        .it{
+            font-size: 31px;
+        }
+        .prev{
+            font-size: 16px;
+        }
+        .text-about{
+            font-size: 14px;
+        }
+        .about-list{
+            font-size: 16px;
+        }
+    }
+    .aic{
+        flex-direction: column;
+    }
+    .aboutme{
+        height: 250vh;
+    }
+    .skills{
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 499px) {
+    .header__title{
+        font-size: 15px;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .nav-list{
+        font-size: 13px;
+    }
+    .abouttext{
+        font-size: 30px;
+    }
+    .skill{
+        font-size: 30px;
+    }
+    .text{
+        .it{
+            font-size: 29px;
+        }
+        .prev{
+            font-size: 14px;
+        }
+        .text-about{
+            font-size: 12px;
+        }
+        .about-list{
+            font-size: 14px;
+        }
+    }
+    .aic{
+        flex-direction: column;
+    }
+    .aboutme{
+        height: 250vh;
+    }
+    .skills{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 299px) {
+    .header__title{
+        font-size: 12px;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .nav-list{
+        font-size: 10px;
+    }
+    .abouttext{
+        font-size: 25px;
+    }
+    .skill{
+        font-size: 25px;
+    }
+    .text{
+        .it{
+            font-size: 27px;
+        }
+        .prev{
+            font-size: 12px;
+        }
+        .text-about{
+            font-size: 10px;
+        }
+        .about-list{
+            font-size: 12px;
+        }
+    }
+    .aic{
+        flex-direction: column;
+    }
+    .aboutme{
+        height: 250vh;
+    }
+    .skills{
+        height: 100vh;
+    }
+}
+
+.abouttext{
+    justify-content: center;
+    display: flex;
+    padding: 30px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.info{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aic{    
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.text{
+    width: 650px;
+    padding: 0 20px;
+}
+
+.aboutphoto img{
+    padding: 15px;
+}
+
+.it{
+    color:rgb(237, 172, 32);
+    margin-bottom: 1rem;
+}
+.prev{
+    margin-bottom: 1rem;
+}
+.prev-custom{
+    color:rgb(237, 172, 32);
+}
+.text-about{
+    color: rgb(137, 116, 116);
+    margin-bottom: 1rem;
+}
+.list-elem{
+    margin-bottom: 0.5rem;
+}
+
+.hobbies{
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.hobbies-title{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.hobb-list{
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+}
+.hobb-elem{
+    width: 200px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(243, 228, 228);
+    margin-bottom: 2rem;
+    transition: 0.5s;
+}
+.hobb-elem:hover{
+    transform: scale(1.2);
+}
+.hobb-text{
+    padding: 0 15px;
+    font-size: 15px;
+}
+.hobb-pic img{
+    max-width: 50px;
+}
+
+.list-sub{
+    width: 525px;
+    height: 242px;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.cont-apps{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+}
+.apps-elem{
+    text-align: center;
+
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1150px) {
+    .list-sub{
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1049px) {
+    .list-sub{
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 949px) {
+    .hobb-list{
+        width: 600px;
+    }
+    .hobb-elem{
+        width: 140px;
+    }
+    .list-sub{
+        width: 325px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 699px) {
+    .hobb-list{
+        width: 570px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text{
+        width: 550px;
+    }
+    .cont-apps{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+    .hobb-list{
+        width: 470px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-sub{
+        width: 400px;
+    }
+    .text{
+        width: 450px;
+    }
+    .cont-apps{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 499px) {
+    .hobb-list{
+        width: 270px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-sub{
+        width: 275px;
+    }
+    .text{
+        width: 275px;
+    }
+    .cont-apps{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 299px) {
+    .hobb-list{
+        width: 240px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-sub{
+        width: 240px;
+    }
+    .text{
+        width: 240px;
+    }
+    .aboutme{
+        height: 200vh;
+    }
+    .cont-apps{
+        flex-direction: column;
+    }
+}
+
+
+.skill{
+    justify-content: center;
+    display: flex;
+    padding: 70px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+.head-txt{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.mth{
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236,0,140,1)0%, rgba(252,103,103,1)100%);
+}
+
+.mathem{
+    width: 76%;
+    animation: mathem 3s;
+}
+.physic{
+    width: 50%;
+    animation: physic 3s;
+}  
+.eng{
+    width: 66%;
+    animation: eng 3s;
+}
+.rus{
+    width: 100%;
+    animation: rus 3s;
+}
+.kyrg{
+    width: 70%;
+    animation: kyrg 3s;
+}
+
+@keyframes mathem{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 76%;
+    }
+}
+
+@keyframes physic{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes eng{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 66%;
+    }
+}
+
+@keyframes rus{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes kyrg{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+.elem-img{
+    padding: 30px;
+}
+
+.txt-head{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.txt-dop{
+    padding: 20px;
+    font-size: 20px;
+    color: #707277;
+}
+.cont-link{
+    font-size: 20px;
+    color: rgb(207, 204, 20);
+}
+
+
